@@ -21,4 +21,4 @@ apt-get update
 # Install docker
 apt-get install -y docker-ce docker-ce-cli containerd.io
 
-wget -o /usr/sbin/kapzuul https://github.com/kapzuul/kapzuul/releases/latest/download/kapzuul_debian11_amd64
+wget -O /usr/sbin/kapzuul https://github.com/kapzuul/kapzuul/releases/latest/download/kapzuul_debian11_amd64
