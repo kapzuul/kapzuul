@@ -27,4 +27,6 @@ jobs:
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: kapzuul_debian11_amd64
+          files: |
+            kapzuul_debian11_amd64
+            install-kapzuul.sh
