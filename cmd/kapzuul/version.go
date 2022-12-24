@@ -13,7 +13,7 @@ func versionCmd() *cobra.Command {
 		Use:   "version",
 		Short: "The version of this binary",
 		Run: func(cmd *cobra.Command, args []string) {
-			fmt.Print(version, gitSha, "\n")
+			fmt.Print(version, " ", gitSha, "\n")
 		},
 	}
 	return cmd
