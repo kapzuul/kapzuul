@@ -21,7 +21,7 @@ jobs:
 
       - name: Build binary
         run: |
-          go build -o kapzuul -ldflags="-X 'main.gitSha=${{ github.sha }}' -X 'main.version=${{ github.ref_name }}'"  ./cmd/kapzuul
+          go build -o kapzuul_debian11_amd64 -ldflags="-X 'main.gitSha=${{ github.sha }}' -X 'main.version=${{ github.ref_name }}'"  ./cmd/kapzuul
 
       - name: Release
         uses: softprops/action-gh-release@v1
